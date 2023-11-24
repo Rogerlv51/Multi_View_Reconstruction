@@ -157,13 +157,13 @@ features_and_matching (core::Scene::Ptr scene,
 
 int main(int argc, char *argv[])
 {
-
+    // 输入两个参数，一个是图片序列文件夹，第二个是保存输出场景的中间文件夹
     if(argc < 3){
         std::cout<<"Usage: [input]image_dir [output]scene_dir"<<std::endl;
         return -1;
     }
 
-    core::Scene::Ptr scene = make_scene(argv[1], argv[2]);
+    core::Scene::Ptr scene = make_scene(argv[1], argv[2]);   // 读取相机的基本参数信息
     std::cout<<"Scene has "<<scene->get_views().size()<<" views. "<<std::endl;
 
 
