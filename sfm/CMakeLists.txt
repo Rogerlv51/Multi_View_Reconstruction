@@ -57,5 +57,5 @@ set(SOURCE_FILES
         bundler_init_pair.cc
         )
 add_library(sfm ${HEADERS} ${SOURCE_FILES})
-#target_link_libraries(sfm core util features)
+target_link_libraries(sfm core util features)
 
